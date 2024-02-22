@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -14,9 +14,19 @@
 </head>
 
 <body>
-    <section id="home"></section>
-    <section id="play-ground"></section>
-    <section id="score"></section>
+    <main class="bg-[#010313] min-h-screen bg-[url(./images/background.png)] bg-no-repeat bg-center">
+
+        <section class="min-h-screen font-poppins text-white flex justify-center items-center " id="home">
+            <div class="flex flex-col items-center justify-center gap-6">
+                <h1 class="text-8xl font-anton">Alpha Clash Pro</h1>
+                <p>Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
+                <button class="text-2xl font-semibold px-8 py-5 border-none bg-white text-black rounded-lg">Play Now</button>
+
+            </div>
+        </section>
+        <section id="play-ground"></section>
+        <section id="score"></section>
+    </main>
 </body>
 
 </html>
