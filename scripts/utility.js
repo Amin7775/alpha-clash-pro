@@ -8,6 +8,12 @@ function showElementById(elementID){
     element.classList.remove('hidden')
 }
 
+function addBgColorById(elementID){
+    const element = document.getElementById(elementID)
+    element.classList.add('bg-orange-400')
+    element.classList.add('text-black')
+}
+
 function getARandomAlphabet(){
     // get or create an alphabet arr
     const alphabetString = 'abcdefghijklmnopqrstuvwxyz'

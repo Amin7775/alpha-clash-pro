@@ -19,4 +19,11 @@ function continueGame(){
     // step - 1 : generate a random alphabet
     const alphabet= getARandomAlphabet()
     console.log(alphabet)
+
+    // set random generated alphabet
+    const currentAlphabetElement = document.getElementById('current-alphabet')
+    currentAlphabetElement.innerText= alphabet
+
+    // set bg color
+    addBgColorById(alphabet)
 }
