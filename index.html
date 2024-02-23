@@ -16,16 +16,16 @@
 <body>
     <main class="bg-[#010313] min-h-screen bg-[url(./images/background.png)] bg-no-repeat bg-center">
         <!-- home section -->
-        <section class="min-h-screen font-poppins text-white flex justify-center items-center hidden" id="home">
-            <div class="flex flex-col items-center justify-center gap-6">
+        <section class="min-h-screen font-poppins text-white " id="home">
+            <div class="flex flex-col items-center justify-center gap-6 min-h-screen">
                 <h1 class="text-8xl font-anton">Alpha Clash Pro</h1>
                 <p>Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-                <button class="text-2xl font-semibold px-8 py-5 border-none bg-white text-black rounded-lg">Play Now</button>
+                <button class="btn h-full text-2xl font-semibold px-8 py-4 border-none bg-white text-black rounded-lg hover:bg-black hover:text-white">Play Now</button>
 
             </div>
         </section>
         <!-- playground -->
-        <section id="play-ground">
+        <section id="play-ground" class="hidden">
             <div class="min-h-screen flex flex-col items-center gap-20 pt-[12vh]">
 
                 <!-- screen -->
@@ -86,7 +86,24 @@
             </div>
         </div>
         </section>
-        <section id="score"></section>
+        <!-- score -->
+        <section id="score" class=" hidden">
+            <div class="flex justify-center items-center min-h-screen">
+
+                <div class="text-white text-center space-y-6 bg-[#ffffff33] p-8 rounded-lg">
+                    <h1 class="text-8xl">
+                        <span class="font-extrabold">Score : </span>
+                        <span>14</span>
+                    </h1>
+                    <button class="btn">
+                        Play Again
+                    </button>
+                    <p>
+                        Practice will make you a Pro
+                    </p>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 
